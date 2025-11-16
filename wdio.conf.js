@@ -41,26 +41,21 @@ export const config = {
   // and 30 processes will get spawned. The property handles how many capabilities
   // from the same test should run tests.
   //
-  maxInstances: 4,
+  maxInstances: 1,
   //
   // If you have trouble getting all important capabilities together, check out the
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
   // https://saucelabs.com/platform/platform-configurator
   //
   capabilities: [
-    // {
-    //   maxInstances: 2,
-    //   browserName: "MicrosoftEdge",
-    //   acceptInsecureCerts: true,
-    // },
-    // {
-    //   maxInstances: 2,
-    //   browserName: "firefox",
-    //   acceptInsecureCerts: true,
-    // },
     {
-      maxInstances: 2,
-      browserName: "chrome",
+      maxInstances: 1,
+      browserName: "microsoftedge",
+      acceptInsecureCerts: true,
+    },
+    {
+      maxInstances: 1,
+      browserName: "firefox",
       acceptInsecureCerts: true,
     },
   ],
